@@ -1,0 +1,58 @@
+
+// COLORS
+:root{
+  --color-1: #2B2D42;
+  --color-2: #0C0E12;
+  --color-3: #c9138c;
+  --color-4: #FFC498;
+  --color-5: #17147E;
+  --color-6: #9127FA;
+  --color-7: #edf2f4;
+  --color-8: #2c78bb;
+
+  --shadow-1: 0 2rem 6rem rgba(0,0,0,.3);
+}
+
+$bp-largest: 95em; // around 1500px
+$bp-largest-2: 92em; // around 1460px used in section-5
+$bp-largest-3: 85em; // around 1350px used in section-4
+
+$bp-large: 63em; // around 1000px
+$bp-large-2: 55em; // around 870px
+$bp-large-3: 41em; // around 650px
+
+$bp-small: 32em; //around 500px
+$bp-small-2: 26em; //around 400px
+$bp-small-3: 19em; //around 300px
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px;
+}
+
+body{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-7); // texto
+
+  // background
+
+  // background-image: linear-gradient(to right bottom, var(--color-1), var(--color-2));
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  background-color: var(--color-1);
+
+  min-height: 100%;
+}

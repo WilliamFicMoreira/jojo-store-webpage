@@ -1,0 +1,15 @@
+.section-1{
+  // background-color: --color-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__items{
+    // display: flex;
+    & img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

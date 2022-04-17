@@ -1,0 +1,12 @@
+.container{
+  max-width: 99%;
+  // min-height: 80rem; // for tests
+  margin: 1rem auto;
+  background-color: var(--color-2);
+  box-shadow: var(--shadow-1);
+
+  @media screen and (max-width: $bp-largest){
+    margin: 0;
+    min-width: 100%;
+  }
+}

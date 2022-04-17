@@ -1,0 +1,75 @@
+.header{
+  min-height: 7rem;
+  background-color: var(--color-7);
+  border-bottom: var(--color-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo{
+    margin-left: 2rem;
+    height: 6.5rem;
+    cursor: pointer;
+
+    @media screen and (max-width: $bp-large-3){
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__page-nav{
+    color: var(--color-2);
+
+    &_page-box{
+      // background-color: blue;
+
+      &_list{
+        list-style: none;
+        // background-color: green;
+        // display: inline;
+        // float: left;
+        
+        &_item{
+          float: left;
+          margin: 2rem;
+          border-bottom: 1px solid var(--color-2);
+          // background-color: greenyellow;
+          // display: block;
+
+          @media screen and (max-width: $bp-large-2){
+            margin: 0.5rem;
+          }
+          
+          & a:link, & a:active, & a:visited, & a:hover{
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            // border-bottom: 0.1rem solid black;
+            @media screen and (max-width: $bp-large-3){
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  &__user-nav {
+    display: flex;
+    margin-right: 3rem;
+
+    @media screen and (max-width: $bp-large-3){
+      margin: 0.5rem;
+    }
+
+    &_icon-box{
+      margin: 0.7rem;
+      cursor: pointer;
+      &_icon{
+        height: 2.2rem;
+        width: 2.2rem;
+      }
+    }
+  }
+}
+
